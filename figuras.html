@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas | Curso Práctico JavaScript</title>
+</head>
+<body>
+    <header>
+    <h1> 
+        Figuras Geométricas
+    </h1>
+    <p>Este es el primer taller práctico de JavaScript</p>
+    </header>
+
+    <section>
+    <h2>
+        Calcula el área y el perímetro de un cuadrado:
+    </h2>
+    <form>
+        <label for="inputcuadrado">
+            Escribe cuánto mide cada lado de tu cuadrado
+        </label>
+        <input id="inputcuadrado" type="number" />
+        <button type="button" onclick="calcularperimetrocuadrado()"> 
+            Calcular el perímetro
+        </button>
+        <button type="button" onclick="calcularareacuadrado()">
+            Calcular el área
+        </button>
+        </form>
+    </section>
+
+    <section>
+        <h2>
+            Calcula el áre y perímetro de un triángulo, altura de un triángulo isosceles
+        </h2>
+        <form>
+            <label for="inputlado1">
+                Lado 1
+            </label>
+            <input id="inputlado1" type="number" />
+            <label for="inputlado2">
+                Lado 2
+            </label>
+            <input id="inputlado2" type="number" />
+            <label for="inputbase">
+                Base
+            </label>
+            <input id="inputbase" type="number" />
+            <label for="inputaltura">
+                Altura
+            </label>
+            <input id="inputaltura" type="number" />
+            <button type="button" onclick="calcularperimetrotriangulo()">
+                Calcular el perímetro
+            </button>
+            <button type="button" onclick="calcularareatriangulo()">
+                Calcular el área
+            </button>
+            <button type="button" onclick="calcularalturaisosceles()">
+                Calcular la altura de un triángulo isosceles
+            </button>            
+        </form>
+    </section>
+
+        <section>
+            <h2>
+                Calcula el perímetro y el área de un circulo
+            </h2>
+            <form>
+                <label for="inputcirulo">
+                    Radio
+                </label>
+                <input id="inputcirculo" type="number" />
+                <button type="button" onclick="calcularperimetrocirculo()">
+                    Calcular el perímetro
+                </button>
+                <button type="button" onclick="calcularareacirculo()">
+                    Calcular el área
+                </button>
+            </form>
+        </section>
+    
+    <script src="./figuras.js"></script>
+</body>
+</html>
